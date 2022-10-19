@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Login from './components/Login';
+import Logout from './components/Logout';
+
+// eslint-disable-next-line
+import { gapi } from 'gapi-script';
+
+const clientID = '381842122352-vhun0e9oi2p84t56lsf95q62hbq39odo.apps.googleusercontent.com'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Login clientID={clientID}/>
+      <Logout clientID={clientID}/>
     </div>
   );
 }
