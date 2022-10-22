@@ -1,6 +1,6 @@
 import './App.css';
 import Login from './components/Login';
-import Logout from './components/Logout';
+// import Logout from './components/Logout';
 
 // eslint-disable-next-line
 import { gapi } from 'gapi-script';
@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <Login clientID={clientID}/>
-      <Logout clientID={clientID}/>
     </div>
   );
 }
